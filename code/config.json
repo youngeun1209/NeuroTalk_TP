@@ -1,0 +1,32 @@
+{
+    "dataset" : "EEG_word",
+    "dataDir" : "../data",
+    "logDir" : "../results",
+    "vocoder_pre" : "../data/pretrained_HiFiGAN/LJ_FT_T2_V3/generator_v3",
+    
+    "sub" : "sub1",
+    "task" : "SpokenEEG",
+    "logName" : "run1",
+    "recon" : "Y_mel",
+    
+    "batch_size" : 16,
+    "max_epochs": 5000,
+    
+    "l_g": [10, 0.1, 0.1],
+    "lr_g": 0.0001,
+    "lr_g_decay": 0.999,
+    "lr_d": 0.0001, 
+    "lr_d_decay": 0.999,
+     
+    "seed": 42,
+                     
+    "max_wav_value": 32768,
+    "sampling_rate": 22050,
+    "n_fft": 1024,
+    "win_length": 1024,
+    "hop_length": 256,
+    "n_mel_channels": 80,
+    
+    "win_len": 2
+
+}
